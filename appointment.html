@@ -27,6 +27,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/icon" href="img/logo.png"/>
     </head>
 
     <body>
@@ -79,7 +80,6 @@
                           <td colspan="2"><h6 class="text-primary m-0">Ayurved & Physiotherapy</h6></td>
                         </tr>
                     </table>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -97,12 +97,11 @@
                                 <a href="blog.html" class="dropdown-item">Our Blog</a>
                                 <a href="team.html" class="dropdown-item">Our Team</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                    <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
                 </div>
             </nav>
         </div>
@@ -131,17 +130,17 @@
                         <div class="section-title text-start">
                             <h4 class="sub-title pe-3 mb-0">Solutions To Your Pain</h4>
                             <h1 class="display-4 mb-4">Best Quality Services With Minimal Pain Rate</h1>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+                            <p class="mb-4">Our Ayurvedic Panchakarma treatments and physiotherapy services are designed to provide effective results with minimal discomfort, ensuring your healing journey is as gentle as possible.</p>
                             <div class="row g-4">
                                 <div class="col-sm-6">
                                     <div class="d-flex flex-column h-100">
                                         <div class="mb-4">
                                             <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Body Relaxation</h5>
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
+                                            <p class="mb-0">Our Ayurvedic Panchakarma therapies and physiotherapy techniques are designed to release tension, reduce stress, and promote overall well-being.</p>
                                         </div>
                                         <div class="mb-4">
-                                            <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Body Relaxation</h5>
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
+                                            <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Yoga</h5>
+                                            <p class="mb-0">Designed to enhance flexibility, strength, and mindfulness, our yoga sessions focus on restoring balance in the body and mind.</p>
                                         </div>
                                         <div class="text-start mb-4">
                                             <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
@@ -163,41 +162,40 @@
                         <div class="appointment-form rounded p-5">
                             <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
                             <h1 class="display-5 mb-4">Get Appointment</h1>
-                            <form>
+                            <form id="appointmentForm" action="https://docs.google.com/forms/d/e/1FAIpQLSddaKf0tl7AoWuew7X1nPNuBd-ObL6ZclBIrJCowF4fa_tP7w/formResponse" method="POST" target="_blank">
                                 <div class="row gy-3 gx-4">
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="First Name">
+                                        <input type="text" id="fullName" name="entry.349190766" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Full Name">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="email" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email">
+                                        <input type="email" id="email" name="entry.461222960" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
+                                        <input type="phone" id="phone" name="entry.1754418011" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
                                     </div>
                                     <div class="col-xl-6">
-                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                                        <select id="gender" name="entry.800703079" class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
                                             <option selected>Your Gender</option>
-                                            <option value="1">Male</option>
-                                            <option value="2">FeMale</option>
-                                            <option value="3">Others</option>
+                                            <option value="Male">Male</option>
+                                            <option value="FeMale">FeMale</option>
+                                            <option value="Others">Others</option>
                                         </select>
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="date" class="form-control py-3 border-primary bg-transparent">
+                                        <input type="date" id="appointmentDate" name="entry.115074305" class="form-control py-3 border-primary bg-transparent">
                                     </div>
                                     <div class="col-xl-6">
-                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                                        <select name="entry.28474512" class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
                                             <option selected>Department</option>
-                                            <option value="1">Physiotherapy</option>
-                                            <option value="2">Physical Helth</option>
-                                            <option value="2">Treatments</option>
+                                            <option value="Ayurveda">Ayurveda</option>
+                                            <option value="Physiotherapy">Physiotherapy</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                        <textarea name="entry.687318055" class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
+                                        <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
                                     </div>
                                 </div>
                             </form>
@@ -233,8 +231,16 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Dakshat</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem impedit eos autem dolores laudantium quia, qui similique
+                            <table>
+                                <tr>
+                                  <td rowspan="2"><img src="img/logo.png" alt="Logo" height="70px"></td>
+                                  <td style="text-align: center;"><h1 class="text-white m-0">Dakshat</h1></td>
+                                </tr>
+                                <tr>
+                                  <td style="text-align: center;"><h6 class="text-white m-0">Pravruttidhatusamyartha</h6></td>
+                                </tr>
+                            </table>
+                            <p>At our clinic, we are dedicated to nurturing your health and well-being through an integrated approach combining Ayurvedic Panchakarma, physiotherapy, and fitness.
                             </p>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>

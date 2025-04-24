@@ -101,7 +101,7 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                    <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
                 </div>
             </nav>
 
@@ -289,9 +289,10 @@
                             <h1 class="display-3 mb-4">We are Ready to Help Improve Your Treatment.</h1>
                             <p class="mb-4">We brings together the wisdom of Ancient Ayurveda treatment, the detoxifying and rejuvenating practice of Panchakarma, and the modern scientific techniques of Physiotherapy to offer a comprehensive approach to cure disease, healing and wellness.</p>
                             <div class="mb-4">
-                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Refresing to get such a personal touch.</p>
-                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Duis aute irure dolor in reprehenderit in voluptate.</p>
-                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Holistic healing with a human heart.</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Where ancient wisdom meets modern comfort.</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Your pain matters. Your healing matters more.</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Tailored treatments, not one-size-fits-all.</p>
                             </div>
                             <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
                         </div>
@@ -481,41 +482,40 @@
                         <div class="appointment-form rounded p-5">
                             <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
                             <h1 class="display-5 mb-4">Get Appointment</h1>
-                            <form>
+                            <form id="appointmentForm" action="https://docs.google.com/forms/d/e/1FAIpQLSddaKf0tl7AoWuew7X1nPNuBd-ObL6ZclBIrJCowF4fa_tP7w/formResponse" method="POST" target="_blank">
                                 <div class="row gy-3 gx-4">
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="First Name">
+                                        <input type="text" id="fullName" name="entry.349190766" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Full Name">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="email" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email">
+                                        <input type="email" id="email" name="entry.461222960" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
+                                        <input type="phone" id="phone" name="entry.1754418011" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
                                     </div>
                                     <div class="col-xl-6">
-                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                                        <select id="gender" name="entry.800703079" class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
                                             <option selected>Your Gender</option>
-                                            <option value="1">Male</option>
-                                            <option value="2">FeMale</option>
-                                            <option value="3">Others</option>
+                                            <option value="Male">Male</option>
+                                            <option value="FeMale">FeMale</option>
+                                            <option value="Others">Others</option>
                                         </select>
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="date" class="form-control py-3 border-primary bg-transparent">
+                                        <input type="date" id="appointmentDate" name="entry.115074305" class="form-control py-3 border-primary bg-transparent">
                                     </div>
                                     <div class="col-xl-6">
-                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                                        <select name="entry.28474512" class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
                                             <option selected>Department</option>
-                                            <option value="1">Physiotherapy</option>
-                                            <option value="2">Physical Helth</option>
-                                            <option value="2">Treatments</option>
+                                            <option value="Ayurveda">Ayurveda</option>
+                                            <option value="Physiotherapy">Physiotherapy</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                        <textarea name="entry.687318055" class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
+                                        <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
                                     </div>
                                 </div>
                             </form>

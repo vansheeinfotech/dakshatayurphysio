@@ -127,3 +127,50 @@
 
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("appointmentForm");
+  
+    form.addEventListener("submit", function (event) {
+      const name = document.getElementById("fullName").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const date = document.getElementById("appointmentDate").value;
+      const gender = document.getElementById("gender").value;
+  
+      const phonePattern = /^\d{10}$/;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+      if (name === "") {
+        alert("Please enter your full name.");
+        event.preventDefault();
+        return;
+      }
+  
+      if (!phonePattern.test(phone)) {
+        alert("Phone number must be exactly 10 digits.");
+        event.preventDefault();
+        return;
+      }
+  
+      if (email !== "" && !emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault();
+        return;
+      }
+  
+      if (date === "") {
+        alert("Please select a date.");
+        event.preventDefault();
+        return;
+      }
+  
+      if (gender === "") {
+        alert("Please select your gender.");
+        event.preventDefault();
+        return;
+      }
+    });
+  });
+  
+  
+
